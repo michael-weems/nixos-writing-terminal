@@ -11,12 +11,12 @@ function wifi() {
 }
 export -f wifi
 
-function write() {
+function storytime() {
 	mkdir -p ~/stories
 	cd ~/stories
 	micro
 }
-export -f write
+export -f storytime
 
 fastfetch
 
