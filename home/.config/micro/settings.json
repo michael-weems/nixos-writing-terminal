@@ -1,0 +1,15 @@
+{
+    "colorscheme": "gruvbox",
+    "cursorline": true,
+    "mkparents": true,
+    "autosave": 30,
+    "saveundo": true,
+    "softwrap": true,
+    "wordwrap": true,
+    "pluginrepos": [ "https://raw.githubusercontent.com/MuratovAS/micro-fzfinder/main/repo.json"],
+    "fzfcmd": "/etc/profiles/per-user/laura/bin/fzf",
+    "fzfopen": "newtab",
+    "fzfpath": "relative",
+    "fzfarg": "--preview 'bat -f -p {}'",
+    "filemanager-openonstart": true
+}

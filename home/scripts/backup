@@ -1,0 +1,8 @@
+#!/run/current-system/sw/bin/bash
+
+GREEN="\033[0;32m"
+NC="\033[0m"
+
+backup-rclone
+find ~/stories -type f                # just list the files that are being uploaded
+printf "${GREEN}backup complete${NC}" # completion message

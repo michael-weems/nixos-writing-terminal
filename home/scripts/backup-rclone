@@ -1,0 +1,5 @@
+#!/run/current-system/sw/bin/bash
+
+# manual push to remote
+rclone sync /home/laura/stories remote:/latest/ --backup-dir remote:/archive/
+

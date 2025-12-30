@@ -1,0 +1,10 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+    "Alt-p": "command:fzfinder",
+    "Alt-Tab": "command:tree",
+    "Alt-r": "command:rename",
+    "Alt-d": "command:rm",
+    "Alt-n": "command:touch",
+    "Alt-m": "command:mkdir"
+}
