@@ -14,17 +14,30 @@
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    neovim
-    nano
-    micro
+    # dependencies
     wget
     git
     gcc
     clang
 
-    rclone
-    fastfetch
+    # text editors
+    vim 
+    neovim
+    micro
+
+    rclone # sync files to dropbox
+
+    # terminals
+    kitty     
+    ghostty  
+
+    # terminal apps
+    fastfetch # show system info 
+    tmux      # switch between terminal instances efficiently
+
+    # desktop apps 
+    rofi      # application launcher
+    hyprpaper # wallpaper manager
   ];
   environment.variables.EDITOR = "nvim";
 
@@ -73,9 +86,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
-
-  # programs.firefox.enable = true;
-
+  programs.firefox.enable = true;
+  programs.waybar.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -46,11 +46,13 @@
     source = ./home/.bash_aliases;
     executable = true;
   };
-  home.file."scripts" = {
-    source = ./home/scripts;
+  home.file.".local/scripts" = {
+    source = ./home/.local/scripts;
     recursive = true;
     executable = true;
   };
 
   home.stateVersion = "25.11";
+
+  wayland.windowManager.hyprland.systemd.enable = false; # prefer uwsm for wayland
 }
