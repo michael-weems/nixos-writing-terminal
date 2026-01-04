@@ -38,6 +38,10 @@
     source = ./home/.config;
     recursive = true;
   };
+  home.file.".config/hypr/theme.conf" = {
+    source = ./home/.config/hypr/theme.conf;
+    recursive = true;
+  };
   home.file.".bashrc" = {
     source = ./home/.bashrc;
     executable = true;
