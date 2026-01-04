@@ -38,10 +38,11 @@
     source = ./home/.config;
     recursive = true;
   };
-  home.file.".config/hypr/theme.conf" = {
-    source = ./home/.config/hypr/theme.conf;
-    recursive = true;
-  };
+  home.file.".config/hypr/theme.conf".text = ''
+$active_border_1 = rgba(6c7086ee)
+$active_border_2 = rgba(7f849cee)
+$inactive_border = rgba(9399b2aa)
+  '';
   home.file.".bashrc" = {
     source = ./home/.bashrc;
     executable = true;
