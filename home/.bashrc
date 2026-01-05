@@ -10,6 +10,10 @@ case $- in
       *) return;;
 esac
 
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
+fi
+
 eval "$(starship init bash)"
 
 export XDG_CONFIG_HOME=$HOME/.config
@@ -144,10 +148,12 @@ export -f wifi
 function storytime() {
 	mkdir -p ~/stories
 	cd ~/stories
-	micro
+	micro README.md
 }
 export -f storytime
 
 fastfetch
 echo "Hi, Laura! Welcome to your writing terminal!"
 echo "To begin, please type the following command: storytime"
+
+storytime

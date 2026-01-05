@@ -47,6 +47,10 @@ $inactive_border = rgba(9399b2aa)
     source = ./home/.bashrc;
     executable = true;
   };
+  home.file.".bash_profile" = {
+    source = ./home/.bash_profile;
+    executable = true;
+  };
   home.file.".bash_aliases" = {
     source = ./home/.bash_aliases;
     executable = true;

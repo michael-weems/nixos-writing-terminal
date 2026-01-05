@@ -41,6 +41,11 @@
   ];
   environment.variables.EDITOR = "nvim";
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
+  ];
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -150,7 +155,6 @@
       "* * * * * root ${pkgs.rclone}/bin/rclone sync /home/laura/stories remote:/latest/ --backup-dir 'remote:/archive/' --log-file /var/log/rclone-cron.log"
     ];
   };
-
 }
 
 
