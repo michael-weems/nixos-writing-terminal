@@ -65,6 +65,14 @@ theme = "Catppuccin Mocha";
     executable = true;
   };
 
+  services.hyprpaper {
+    enable = true;
+    settings = {
+      preload = [ "~/wallpapers/catppuccin-mocha-flower-field.jpg" ];
+      wallpaper = [ ",~/wallpapers/catppuccin-mocha-flower-field.jpg" ];
+    };
+  };
+
   home.stateVersion = "25.11";
 
   wayland.windowManager.hyprland.systemd.enable = false; # prefer uwsm for wayland
