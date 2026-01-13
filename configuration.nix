@@ -24,6 +24,7 @@
     vim 
     neovim
     micro
+    vscode
 
     rclone # sync files to dropbox
 
