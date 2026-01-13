@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
     ];
 
-  nix.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # List packages installed in system profile.
