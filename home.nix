@@ -65,7 +65,7 @@ theme = "Catppuccin Mocha";
     executable = true;
   };
 
-  services.hyprpaper {
+  services.hyprpaper = {
     enable = true;
     settings = {
       preload = [ "~/wallpapers/catppuccin-mocha-flower-field.jpg" ];
