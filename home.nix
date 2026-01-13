@@ -43,6 +43,10 @@ $active_border_1 = rgba(6c7086ee)
 $active_border_2 = rgba(7f849cee)
 $inactive_border = rgba(9399b2aa)
   '';
+  home.file.".config/ghostty/theme".text = ''
+opacity = 1;
+theme = "Catppuccin Mocha";
+  '';
   home.file.".bashrc" = {
     source = ./home/.bashrc;
     executable = true;

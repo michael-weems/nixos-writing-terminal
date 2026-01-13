@@ -148,7 +148,7 @@ export -f wifi
 function storytime() {
 	mkdir -p ~/stories
 	cd ~/stories
-	micro README.md
+        code .
 }
 export -f storytime
 
