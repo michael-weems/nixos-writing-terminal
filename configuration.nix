@@ -155,8 +155,8 @@
   services.cron = {
     enable = true;
     systemCronJobs = [
-      "1 * * * * root ${pkgs.rclone}/bin/rclone sync /home/laura/sync remote:/latest/ --backup-dir 'remote:/archive/' --log-file /var/log/rclone-cron.log"
-      "*/15 * * * * root cp -r /home/laura/stories /home/laura/sync"
+      "1-59/15 * * * * root ${pkgs.rclone}/bin/rclone sync /home/laura/sync remote:/latest/ --backup-dir 'remote:/archive/' --log-file /var/log/rclone-cron.log"
+      "0-59/15 * * * * root cp -r /home/laura/stories /home/laura/sync"
     ];
   };
 }
