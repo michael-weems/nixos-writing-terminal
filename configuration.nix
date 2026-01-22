@@ -156,7 +156,7 @@
     enable = true;
     systemCronJobs = [
       "1-59/15 * * * * root ${pkgs.rclone}/bin/rclone sync /home/laura/sync remote:/latest/ --backup-dir 'remote:/archive/' --log-file /var/log/rclone-cron.log"
-      "0-59/15 * * * * root cp -r /home/laura/stories /home/laura/sync"
+      "0-59/15 * * * * root cp -fr /home/laura/stories /home/laura/sync"
     ];
   };
 }
