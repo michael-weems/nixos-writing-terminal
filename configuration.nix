@@ -156,7 +156,7 @@
     enable = true;
     systemCronJobs = [
       "0-59/15 * * * * root cp -fr /home/laura/stories/dropbox /home/laura/sync"
-      "1-59/15 * * * * root find /home/laura/sync -type -name '*.*' -exec sh -c 'mv "$1" "$1.md"' _ {} \;"
+      "1-59/15 * * * * root find /home/laura/sync -type -name '*.*' -exec sh -c 'mv \"$1\" \"$1.md\"' _ {} \;"
       "2-59/15 * * * * root ${pkgs.rclone}/bin/rclone sync /home/laura/sync remote:/latest/ --backup-dir 'remote:/archive/' --log-file /var/log/rclone-cron.log"
     ];
   };
